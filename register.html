@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
-    <title>{hostname} XMPP Account Registration</title>
+    <title>{hostname} Account Registration</title>
 
   </head>
   <body>
@@ -15,7 +15,6 @@ function checkPw(form) {
 pw = document.getElementById("pw").value;
 pw2 = document.getElementById("pw2").value;
 
-
 if (pw != pw2) {
 alert ("\nThe password repeat is wrong!\nPlease try again!")
 document.getElementById("pw").value = "";
@@ -23,7 +22,6 @@ document.getElementById("pw2").value = "";
 document.getElementById("pw").focus();
 return false;
 }
-
 
 else
 // alles OK
@@ -60,19 +58,17 @@ return true;
 
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input type="password" class="form-control" name="confirm_password" placeholder="Password repeat" id="pw2">
+                                        <input type="password" class="form-control" name="confirm_password" placeholder="Repeat Password" id="pw2">
                                     </div>
 
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                                        <input type="password" class="form-control" name="email" placeholder="E-Mail" id="pw2">
+                                        <input type="text" class="form-control" name="email" placeholder="E-Mail" id="pw2">
                                     </div>
-
 
                             <div style="margin-bottom: 25px" class="input-group">
                                         {captcha}
                                     </div>
-
 
                                 <div style="margin-top:10px" class="form-group">
                                     <div class="col-sm-12 controls">
