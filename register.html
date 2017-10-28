@@ -22,6 +22,16 @@ document.getElementById("pw2").value = "";
 document.getElementById("pw").focus();
 return false;
 }
+  
+if (pw.length == 0) {
+alert("Password input cannot contain 0 characters!");
+return false;
+}
+  
+if (pw.length < 5) {
+alert("Your password is too short. Must be longer than 5 characters!");
+return false;
+}
 
 else
 // alles OK
