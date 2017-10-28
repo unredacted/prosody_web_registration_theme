@@ -10,7 +10,7 @@ For Installation do this steps
 
     mkdir /etc/prosody/register-templates/ 
     cd /etc/prosody/register-templates 
-    git clone https://github.com/lunarthegrey/Prosody-Web-Registration-Theme
+    git clone https://github.com/crypto-world/prosody_web_registration_theme
 
 Then add in the prosody config
 
@@ -19,14 +19,10 @@ Then add in the prosody config
 The following lines
 
     -- Register Web Template files 
-    register_web_template = "/etc/prosody/register-templates/Prosody-Web-Registration-Theme"
+    register_web_template = "/etc/prosody/register-templates/prosody_web_registration_theme"
     
 After a restart from prosody
 
     prosodyctl restart
 
-You have a nice looking theme
-
-## Screenshots
-![alt tag](https://raw.githubusercontent.com/lunarthegrey/Prosody-Web-Registration-Theme/master/screenshots/screen.png)
-![alt tag](https://raw.githubusercontent.com/lunarthegrey/Prosody-Web-Registration-Theme/master/screenshots/screen2.png)
+You now have a nice looking theme
