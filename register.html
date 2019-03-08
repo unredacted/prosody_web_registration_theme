@@ -16,20 +16,20 @@ pw = document.getElementById("pw").value;
 pw2 = document.getElementById("pw2").value;
 
 if (pw != pw2) {
-alert ("\nThe password repeat is wrong!\nPlease try again!")
+alert ("\nThe repeated password did not match!\nPlease try again!")
 document.getElementById("pw").value = "";
 document.getElementById("pw2").value = "";
 document.getElementById("pw").focus();
 return false;
 }
-  
+
 if (pw.length == 0) {
-alert("Password input cannot contain 0 characters!");
+alert("The password input cannot contain 0 characters!");
 return false;
 }
-  
-if (pw.length < 5) {
-alert("Your password is too short. Must be longer than 5 characters!");
+
+if (pw.length < 12) {
+alert("Your password is too short. It must be longer than 12 characters!");
 return false;
 }
 
@@ -69,7 +69,7 @@ return true;
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                         <input type="password" class="form-control" name="confirm_password" placeholder="Repeat Password" id="pw2">
                                     </div>
-                          
+
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                                         <input type="text" class="form-control" name="email" placeholder="E-Mail" id="pw2">
