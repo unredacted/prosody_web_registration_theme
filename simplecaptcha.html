@@ -1,3 +1,12 @@
-<span class="input-group-addon">What is {x} {op} {y}?</span>
+<span class="input-group-addon">What is <span id="{a}"></span>&nbsp; <span id="{b}"></span>&nbsp; <span id="{c}"></span>?</span>
 <input name="captcha_challenge" type="hidden" value="{challenge}">
 <input name="captcha_reply" class="form-control" required type="number">
+
+<script>
+  let x = '{x}';
+  let y = '{y}';
+  let op = '{op}';
+  document.getElementById('{a}').innerHTML = x;
+  document.getElementById('{b}').innerHTML = op;
+  document.getElementById('{c}').innerHTML = y;
+</script>
